@@ -153,7 +153,7 @@ def evaluate_performance(test_data, model, item_mapping, top_n=5):
 
 # 데이터 로드 및 전처리
 train_data = pd.read_csv('final_train_data.csv')
-test_data = pd.read_csv('final_test_data.csv')
+test_data = pd.read_csv('final_test_data.csv')     
 
 # 유저 및 아이템 매핑
 user_mapping = {user: idx for idx, user in enumerate(train_data['nickname'].unique())}
